@@ -89,3 +89,8 @@ export interface Review {
   rating: number,
   movieId: number,
 }
+
+export interface Movie extends BaseMovieProps {
+  genre_ids?: number[];
+  genres?: { id: number; name: string }[];
+}
